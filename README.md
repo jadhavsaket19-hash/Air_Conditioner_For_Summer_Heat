@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Smart Wearable Air Cooling Jacket 🌬️
 
 A professional interactive frontend prototype website for the Smart Wearable Air Cooling Jacket — a Makerspace project by First Year Mechanical Engineering students.
@@ -190,3 +191,6 @@ smart-cooling-jacket/
 ## 📄 License
 
 MIT License — Free to use for educational purposes.
+=======
+# Air_Conditioner_For_Summer_Heat
+>>>>>>> 9a8fdb39291db4e4f90a952e7b0adce0b762b47c
