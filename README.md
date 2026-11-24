@@ -1,0 +1,192 @@
+# Smart Wearable Air Cooling Jacket 🌬️
+
+A professional interactive frontend prototype website for the Smart Wearable Air Cooling Jacket — a Makerspace project by First Year Mechanical Engineering students.
+
+## 🌐 Live Demo
+
+> Deploy to GitHub Pages using the instructions below.
+
+---
+
+## 🚀 Project Features
+
+- **Live Monitoring Dashboard** — Real-time simulated temperature, fan, and battery charts
+- **Interactive Control Panel** — System ON/OFF, fan controls, automatic/manual modes
+- **Working Principle** — Animated flow diagrams and block diagrams
+- **Component Specifications** — Detailed hardware component cards
+- **Assembly Guide** — Step-by-step interactive assembly process
+- **Performance Testing** — Simulated test scenario graphs
+- **Presentation Mode** — Full-screen presentation slides for college evaluation
+- **System Activity Log** — Live event logging
+- **Fully Responsive** — Works on mobile, tablet, and desktop
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Version |
+|------|---------|
+| React | 18.x |
+| Vite | 6.x |
+| Tailwind CSS | 3.x |
+| Recharts | 2.x |
+| Lucide React | 0.46x |
+| React Router DOM | 6.x |
+| gh-pages | 6.x |
+
+---
+
+## 📦 Installation & Running Locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/YOUR_USERNAME/smart-cooling-jacket.git
+cd smart-cooling-jacket
+
+# 2. Install dependencies
+npm install
+
+# 3. Start development server
+npm run dev
+```
+
+Then open `http://localhost:5173` in your browser.
+
+---
+
+## 🏗️ Build Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start local development server |
+| `npm run build` | Build for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run deploy` | Deploy to GitHub Pages |
+
+---
+
+## 🌍 GitHub Pages Deployment
+
+### Step 1: Create GitHub Repository
+
+1. Go to [github.com](https://github.com) and log in
+2. Click **New repository**
+3. Name it `smart-cooling-jacket` (or any name you prefer)
+4. Set visibility to **Public**
+5. Click **Create repository**
+
+### Step 2: Configure Vite Base Path
+
+Edit `vite.config.js` and update the `base` to match your repository name:
+
+```js
+export default defineConfig({
+  plugins: [react()],
+  base: '/YOUR-REPO-NAME/',  // e.g., '/smart-cooling-jacket/'
+})
+```
+
+### Step 3: Push Code to GitHub
+
+```bash
+# Initialize git (if not already done)
+git init
+git add .
+git commit -m "Initial commit: Smart Cooling Jacket prototype"
+
+# Add your GitHub remote
+git remote add origin https://github.com/YOUR_USERNAME/smart-cooling-jacket.git
+
+# Push to main branch
+git branch -M main
+git push -u origin main
+```
+
+### Step 4: Deploy to GitHub Pages
+
+```bash
+npm run deploy
+```
+
+This will:
+1. Build the project (`npm run build`)
+2. Push the `dist/` folder to the `gh-pages` branch
+
+### Step 5: Enable GitHub Pages
+
+1. Go to your repository on GitHub
+2. Click **Settings** → **Pages**
+3. Under **Branch**, select `gh-pages` and `/ (root)`
+4. Click **Save**
+5. Wait 2–5 minutes for deployment
+6. Your site will be live at: `https://YOUR_USERNAME.github.io/smart-cooling-jacket/`
+
+---
+
+## 📁 Project Structure
+
+```
+smart-cooling-jacket/
+├── public/
+│   └── vite.svg
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   │   ├── Navbar.jsx          # Top navigation bar
+│   │   │   └── Sidebar.jsx         # Mobile sidebar
+│   │   └── ui/
+│   │       ├── FanIcon.jsx         # Animated fan SVG
+│   │       ├── BatteryIndicator.jsx # Battery display
+│   │       └── TempGauge.jsx       # Temperature gauge
+│   ├── context/
+│   │   └── SimulationContext.jsx   # Global simulation state
+│   ├── pages/
+│   │   ├── HomeDashboard.jsx       # Home/landing page
+│   │   ├── LiveMonitoring.jsx      # Real-time monitoring
+│   │   ├── ControlPanel.jsx        # Interactive controls
+│   │   ├── WorkingPrinciple.jsx    # Flow diagrams
+│   │   ├── Components.jsx          # Component specs
+│   │   ├── Assembly.jsx            # Assembly steps
+│   │   ├── PerformanceTesting.jsx  # Test scenarios
+│   │   ├── AdvantagesLimitations.jsx
+│   │   ├── FutureImprovements.jsx
+│   │   ├── TeamInfo.jsx            # Team members
+│   │   └── PresentationMode.jsx    # Presentation slides
+│   ├── App.jsx                     # Main app + routing
+│   ├── index.css                   # Global styles
+│   └── main.jsx                    # Entry point
+├── index.html
+├── vite.config.js                  # Vite + GitHub Pages config
+├── tailwind.config.js
+├── postcss.config.js
+└── package.json
+```
+
+---
+
+## 👥 Project Team
+
+| Name | Role |
+|------|------|
+| Saket Jadhav | Team Member |
+| Vivek Adhav | Team Member |
+| Shubham Khatane | Team Member |
+| Om Rindhe | Team Member |
+
+**Project Guide:** Kiran Wakchaure Sir  
+**Department:** First Year Mechanical Engineering  
+**Course:** Makerspace  
+
+---
+
+## ⚠️ Important Notes
+
+- All simulation data is **generated by JavaScript** and does not represent actual hardware readings
+- The website is a **frontend-only prototype** with no backend, database, or real hardware connections
+- All interactive features are for **demonstration purposes** during college evaluation
+
+---
+
+## 📄 License
+
+MIT License — Free to use for educational purposes.
