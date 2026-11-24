@@ -7,7 +7,7 @@ import react from '@vitejs/plugin-react'
 // then base should be '/smart-cooling-jacket/'
 export default defineConfig({
   plugins: [react()],
-  base: '/smart-cooling-jacket/',
+  base: 'Air_Conditioner_For_Summer_Heat',
   build: {
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
